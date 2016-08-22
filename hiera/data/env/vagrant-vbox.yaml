@@ -315,3 +315,10 @@ neutron::policy::policies:
     value: 'rule:context_is_admin or tenant_id:%(tenant_id)s'
 
 rjil::haproxy::contrail::ec2api_listen_ports: '1443'
+rjil::contrail::ec2api::db_provision: false
+ec2api::ec2api_config:
+  DEFAULT/external_network:
+    value: 'public public-1 public-2'
+  DEFAULT/account_profile_type:
+    value: 'low high medium'
+
